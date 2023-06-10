@@ -57,8 +57,3 @@ Feel free to explore the code and make any modifications according to your needs
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
-## Acknowledgements
-
-- This project was built using Create React App (https://create-react-app.dev/), which provides a solid foundation for React applications.
-- The libraries and technologies used in this project are open-source and were developed by their respective authors and contributors.
