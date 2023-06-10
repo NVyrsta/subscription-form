@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Subscription Form - Webinar Signup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a subscription form designed for users to sign up for a webinar. It utilizes various technologies and libraries to provide a seamless and user-friendly experience.
 
-## Available Scripts
+## Technologies and Libraries Used
 
-In the project directory, you can run:
+- React: A JavaScript library for building user interfaces. It enables the creation of reusable UI components and facilitates efficient rendering and updating of the application.
+- EmailJS: A service that allows sending emails directly from the client-side code. It simplifies the process of integrating email functionality into the application.
+- Formik: A form library for React that helps with form validation, handling form submission, and managing form state.
+- Yup: A JavaScript library for schema validation. It is used in conjunction with Formik to define and validate the form's input fields.
+- react-phone-number-input: A React component for entering and validating phone numbers. It provides a user-friendly phone number input field with built-in validation capabilities.
+- libphonenumber-js: A JavaScript library for parsing, formatting, and validating international phone numbers. It is used in combination with react-phone-number-input to ensure the phone number entered by the user is valid.
+- react-scripts: A set of scripts and configuration used by Create React App, which simplifies the setup and development process of React applications.
+- react-dom: A package that serves as the entry point to the DOM and is required for rendering React components.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To clone and run this project locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository: `git clone https://github.com/your-username/subscription-form.git`
+2. Navigate to the project directory: `cd subscription-form`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm run start`
+5. Open your browser and visit `http://localhost:3000` to see the application running.
 
-### `npm test`
+Make sure to run `npm install` to install all the required dependencies before starting the project.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+The project's file structure is organized as follows:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+subscription-form/
+  ├── public/
+  │   ├── index.html
+  │   └── ...
+  ├── src/
+  │   ├── components/
+  │   │   ├── Form.js
+  │   │   └── ...
+  │   ├── App.js
+  │   ├── index.js
+  │   └── ...
+  ├── package.json
+  ├── README.md
+  └── ...
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- The `public` directory contains the HTML file and any other static assets required for the application.
+- The `src` directory is where the application's source code resides.
+- The `components` directory holds reusable React components used in the form.
+- The `App.js` file is the entry point of the application, rendering the main form component.
+- The `index.js` file is responsible for rendering the React application into the DOM.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Feel free to explore the code and make any modifications according to your needs.
 
-### `npm run eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Acknowledgements
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- This project was built using Create React App (https://create-react-app.dev/), which provides a solid foundation for React applications.
+- The libraries and technologies used in this project are open-source and were developed by their respective authors and contributors.
