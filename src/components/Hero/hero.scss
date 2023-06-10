@@ -1,0 +1,232 @@
+@import '../../styles/basic';
+
+.container {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'hero'
+    'form'
+    'desc';
+
+  @include onTablet {
+    grid-template-columns: 1fr 366px;
+    grid-template-areas:
+      'hero form'
+      'desc form';
+  }
+
+  @include onDesktop {
+    column-gap: 135px;
+  }
+}
+
+.hero {
+  max-width: 928px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__badge {
+    @include flex-center;
+    margin: 0 auto;
+
+    width: 89px;
+    height: 23.93px;
+    border-radius: 4px;
+    background-color: $blue-light;
+    transform: translateX(-5px);
+    
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+
+    @include onDesktop {
+      font-size: 16px;
+      line-height: 24px;
+
+      margin: unset;
+      width: 119px;
+      height: 32px;
+    }
+
+    &::before {
+      content: '';
+      margin-right: 5px;
+      width: 14.21px;
+      height: 14.21px;
+
+      background-image: url(../../images/icons/globe.svg);
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 65px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $pink;
+
+    @include onDesktop {
+      font-size: 77px;
+      line-height: 94px;
+      text-align: left;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    @include onDesktop {
+      text-align: left;
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    & span:nth-child(1) {
+      @include flex-center-inline;
+      margin-right: 12px;
+      width: 76.26px;
+      height: 27.53px;
+
+      background: $pink;
+      border-radius: 4px;
+      transform: rotate(-4deg);
+
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 20px;
+
+      @include onDesktop {
+        width: 107px;
+        height: 39px;
+
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+  }
+
+  &__info {
+    grid-area: hero;
+    max-width: 427px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__desc {
+    margin-bottom: 20px;
+
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+
+    @include onDesktop {
+      margin-bottom: 52px;
+
+      font-size: 18px;
+      text-align: left;
+    }
+
+    & strong:last-child {
+      color: $blue-light;
+
+      @include onDesktop {
+        color: inherit;
+      }
+    }
+
+    & strong:last-child span {
+      @include flex-center-inline;
+      width: 90px;
+      height: 27px;
+      background-color: $blue-light;
+      border-radius: 3px;
+
+      color: $light;
+    }
+  }
+
+  &__extra-info {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin: 0 auto;
+    max-width: 60vw;
+
+    @include onDesktop {
+      gap: 16px;
+      margin: unset;
+    }
+  }
+
+  &__extra-info {
+    grid-area: desc;
+  }
+
+  &__bonus {
+    order: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    @include onDesktop {
+      max-width: 278px;
+    }
+
+    & h3 {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    @media screen and (min-width: 768px) {
+      order: 2;
+    }
+  }
+
+  &__speaker {
+    order: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 11px;
+
+    font-size: 12px;
+    line-height: 1.6;
+
+    @include onDesktop {
+      max-width: 375px;
+    }
+
+    & h3 {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    & span {
+      color: $blue-light;
+    }
+
+    @media screen and (min-width: 768px) {
+      order: 1;
+    }
+  }
+
+  &__form {
+    grid-area: form;
+  }
+}

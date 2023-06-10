@@ -1,0 +1,35 @@
+@import './styles/basic';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-dark;
+}
+
+.app {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 28px 16px 40px;
+  overflow-x: hidden;
+
+  background-image: url(./images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: $light;
+  font-family: 'Gilroy', sans-serif;
+
+  @include onTablet {
+    padding: 28px 16px 140px;
+    
+    background-image: url(./images/bg.png);
+  }
+}
+
+a {
+  color: inherit;
+}
