@@ -8,9 +8,14 @@
   max-width: 928px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: $content;
+
+  padding: 28px 16px 0;
 
   @include onTablet {
     margin-bottom: 116px;
+    padding: 28px 16px 0;
   }
 
   &__logo {
@@ -46,7 +51,7 @@
     @include onTablet {
       width: 141px;
       height: 40px;
-      
+
       font-size: 14px;
     }
 

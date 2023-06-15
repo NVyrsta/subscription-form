@@ -6,7 +6,7 @@ import Gift from '../../images/icons/gift.svg'
 
 const Main = () => {
   return (
-    <div className="hero container">
+    <main className="hero container">
       <div className="hero__info block1">
         <h2 className="hero__badge">Вебинар</h2>
 
@@ -58,7 +58,7 @@ const Main = () => {
       <div className="hero__form">
         <ContactForm />
       </div>
-    </div>
+    </main>
   )
 }
 

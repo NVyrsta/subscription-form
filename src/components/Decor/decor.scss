@@ -1,0 +1,168 @@
+@import '../../styles/basic';
+
+.fe-banner {
+  display: none;
+
+  @include onTablet {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-image: url(../../images/decor/front-end-developer.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.decor-icon {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: $decor-icons;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+}
+
+.left-ellipse {
+  display: none;
+
+  @include onTablet {
+    display: block;
+    position: absolute;
+    z-index: $decor;
+    width: 399px;
+    height: 400px;
+    left: -31px;
+    bottom: 490px;
+
+    background: #332f65;
+    opacity: 0.5;
+    filter: blur(103px);
+  }
+}
+
+.right-ellipse {
+  display: none;
+
+  @include onTablet {
+    position: absolute;
+    display: block;
+    z-index: $decor;
+    border-radius: 50%;
+    width: 790px;
+    height: 793px;
+    left: 1068px;
+    bottom: 342px;
+
+    background: #332f65;
+    opacity: 0.8;
+    filter: blur(103px);
+  }
+}
+
+.bottom-ellipse {
+  display: block;
+  position: absolute;
+  width: 912px;
+  height: 912px;
+  left: -732px;
+  top: 649px;
+  border-radius: 50%;
+
+  background: #332f65;
+  filter: blur(250px);
+
+  @include onTablet {
+    display: none;
+  }
+}
+
+.html-icon {
+  position: absolute;
+  background-image: url(../../images/decor/html.png);
+  transform: rotate(12deg);
+  width: 88px;
+  height: 88px;
+  left: 1318px;
+  top: 240px;
+
+  &::after {
+    width: 8px;
+    height: 8px;
+    right: -4px;
+    top: 14px;
+    background: #f16529;
+  }
+}
+
+.js-icon {
+  background-image: url(../../images/decor/js.png);
+  width: 61px;
+  height: 72px;
+  left: 1344px;
+  top: 404px;
+
+  transform: rotate(15deg);
+
+  &::after {
+    width: 8px;
+    height: 8px;
+    top: 4px;
+    right: -10px;
+    background: #f0be25;
+  }
+}
+
+.vsc-icon {
+  background-image: url(../../images/decor/vsc.png);
+  width: 60px;
+  height: 60px;
+  left: 1296px;
+  top: 568px;
+
+  transform: rotate(-20.56deg);
+
+  &::after {
+    bottom: 0;
+    right: -14px;
+    background: #48aef3;
+  }
+}
+
+.css-icon {
+  width: 60px;
+  height: 85px;
+  left: 1218px;
+  top: 364px;
+  transform: rotate(-22deg);
+  background-image: url(../../images/decor/css.png);
+
+  &::after {
+    top: -4px;
+    right: 0;
+    background: #2965f1;
+  }
+}
+
+.sublime-icon {
+  background-image: url(../../images/decor/sublime-text.png);
+  width: 53px;
+  height: 53px;
+  left: 1221px;
+  top: 498px;
+
+  transform: rotate(-15deg);
+
+  &::after {
+    top: -14px;
+    right: -4px;
+
+    background: #ff9800;
+  }
+}

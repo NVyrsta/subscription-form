@@ -1,7 +1,7 @@
 {
-  "name": "powercode-academy",
+  "homepage": "https://NVyrsta.github.io/subscription-form",
+  "name": "subscription-form",
   "author": "Nataliia Vyrsta",
-  "homepage": "https://github.com/NVyrsta/subscription-form",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
