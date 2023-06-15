@@ -1,9 +1,7 @@
 {
   "files": {
-    "main.css": "/subscription-form/static/css/main.32d1c564.css",
-    "main.js": "/subscription-form/static/js/main.2cbeef49.js",
-    "static/media/bg.png": "/subscription-form/static/media/bg.791a07901995ed6ea20d.png",
-    "static/media/bg-mobile.png": "/subscription-form/static/media/bg-mobile.fc964bab4608db163cdb.png",
+    "main.css": "/subscription-form/static/css/main.1ff82a33.css",
+    "main.js": "/subscription-form/static/js/main.cecc8213.js",
     "static/media/Gilroy-UltraLightItalic.eot": "/subscription-form/static/media/Gilroy-UltraLightItalic.a6fc8679f9d9bbc3e3a7.eot",
     "static/media/Gilroy-UltraLightItalic.ttf": "/subscription-form/static/media/Gilroy-UltraLightItalic.68a9a27f1aa1261013f3.ttf",
     "static/media/Gilroy-ThinItalic.eot": "/subscription-form/static/media/Gilroy-ThinItalic.cea6b0a2dc07f5b5e074.eot",
@@ -85,16 +83,17 @@
     "static/media/Gilroy-Heavy.woff2": "/subscription-form/static/media/Gilroy-Heavy.19b3f6fe15dc6f668d28.woff2",
     "static/media/Gilroy-Regular.woff2": "/subscription-form/static/media/Gilroy-Regular.f6c9931fabe5a6eb3307.woff2",
     "static/media/Gilroy-Extrabold.woff2": "/subscription-form/static/media/Gilroy-Extrabold.5c5942d3e4d9a9645df4.woff2",
+    "static/media/front-end-developer.svg": "/subscription-form/static/media/front-end-developer.7f06cba900ec99b76282.svg",
     "static/media/logo.svg": "/subscription-form/static/media/logo.b642f491b1e37db8ded7435c5d3dba89.svg",
     "static/media/globe.svg": "/subscription-form/static/media/globe.c9e50998b70d7ce4c8e5.svg",
     "static/media/gg_time.svg": "/subscription-form/static/media/gg_time.363a9419e8cafe4228ae.svg",
     "static/media/calendar_today.svg": "/subscription-form/static/media/calendar_today.6664a7cb2717db472c41.svg",
     "index.html": "/subscription-form/index.html",
-    "main.32d1c564.css.map": "/subscription-form/static/css/main.32d1c564.css.map",
-    "main.2cbeef49.js.map": "/subscription-form/static/js/main.2cbeef49.js.map"
+    "main.1ff82a33.css.map": "/subscription-form/static/css/main.1ff82a33.css.map",
+    "main.cecc8213.js.map": "/subscription-form/static/js/main.cecc8213.js.map"
   },
   "entrypoints": [
-    "static/css/main.32d1c564.css",
-    "static/js/main.2cbeef49.js"
+    "static/css/main.1ff82a33.css",
+    "static/js/main.cecc8213.js"
   ]
 }
